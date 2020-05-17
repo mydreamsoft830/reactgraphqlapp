@@ -1,0 +1,38 @@
+.sidebar {
+  position: relative;
+  box-sizing: border-box;
+  flex: 0 0 265px;
+  transition: ease all 0.2s;
+
+  .sidebar-inner {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 265px;
+    border-right: 1px solid var(--border);
+    overflow: hidden;
+    background-color: var(--layer-color);
+    z-index: 10;
+    transition: ease all 0.2s;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    flex: 0 0 56px;
+
+    .sidebar-inner {
+      width: 57px;
+
+      &:hover {
+        width: 265px;
+
+        .menu-item-container.selected .sub-menu-items {
+          max-height: 500px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.add-widget-container {
+    padding: 16px 32px;
+
+    h1.title {
+        text-transform: capitalize;
+    }
+
+    .text-field-container {
+        height: 270px;
+        overflow: auto;
+
+        .graph-type {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .text-field {
+            margin-bottom: 0;
+        }
+
+        .button-content {
+            gap: 5px;
+        }
+    }
+}

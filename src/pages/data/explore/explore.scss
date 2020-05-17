@@ -1,0 +1,219 @@
+.explore-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  max-width: 100%;
+
+  .explore-sidebar {
+    flex: 0 0 350px;
+    border-right: 1px solid var(--border);
+    padding-right: 15px;
+
+    >div {
+      padding: 5px 0;
+
+      >span:first-child {
+        display: block;
+        margin: 3px 0 5px 0;
+        font-size: 14px;
+      }
+    }
+
+    .aggregate-select {
+      display: flex;
+      flex-direction: row;
+
+      >div:first-child {
+        flex: 0 0 92px;
+      }
+
+      >div {
+        flex: 1 1;
+      }
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: row;
+      margin-top: 16px;
+
+      .refresh-button {
+        box-sizing: border-box;
+
+        .button-content {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+
+          svg: {
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+        }
+
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .explore-results {
+    flex: 1 1;
+    padding-left: 15px;
+    max-width: calc(100% - 385px);
+  }
+  .result-graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 32px;
+    box-sizing: border-box;
+    border: 1px solid var(--border);
+    box-shadow: 0px 33px 10px rgb(0 0 0 / 3%),
+      0px 13.7866px 33.4221px rgb(0 0 0 / 5%),
+      0px 7.37098px 17.869px rgb(0 0 0 / 4%),
+      0px 4.13211px 10.0172px rgb(0 0 0 / 4%),
+      0px 2.19453px 5.32008px rgb(0 0 0 / 3%),
+      0px 0.913195px 2.21381px rgb(0 0 0 / 2%);
+  }
+
+  .advanced-options {
+    margin-top: 16px;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      background-color:  var(--advance-option-bg-color);
+    }
+
+    &.open {
+      background-color:  var(--advance-option-bg-color);
+    }
+
+    .advanced-options-header {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      padding: 3px;
+      border-radius: 3px;
+
+      svg {
+        transition: all linear 300ms;
+        margin-right: 10px;
+      }
+
+      &.open {
+        background-color:  var(--advance-option-bg-color);
+
+        svg {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .controls {
+      padding: 8px 24px;
+      margin: 0;
+
+      .control {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        span:first-child {
+          font-size: 12px;
+        }
+        
+        select {
+          background-color: var(--advance-option-bg-color);
+          color           : var(--font-color);
+        }
+      }
+    }
+  }
+
+  .custom-time {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: grid;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 2px 8px;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .explore-results-table {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    box-sizing: border-box;
+    margin: 16px 0;
+    padding: 0;
+    background-color: var(--layer-color);
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    box-shadow: 0px 33px 80px rgb(0 0 0 / 7%),
+      0px 13.7866px 33.4221px rgb(0 0 0 / 5%),
+      0px 7.37098px 17.869px rgb(0 0 0 / 4%),
+      0px 4.13211px 10.0172px rgb(0 0 0 / 4%),
+      0px 2.19453px 5.32008px rgb(0 0 0 / 3%),
+      0px 0.913195px 2.21381px rgb(0 0 0 / 2%);
+
+    table {
+      width: 100%;
+      text-align: right;
+      border-collapse: collapse;
+
+      thead {
+        height: 50px;
+        font-size: 18px;
+        color: var(--cta-description);
+
+        th {
+          border-bottom: 2px solid #c1c6da;
+        }
+
+        th:first-child {
+          text-align: left;
+        }
+      }
+
+      td:first-child {
+        text-align: left;
+      }
+
+      td,
+      th {
+        padding: 8px 32px;
+      }
+
+      tr:nth-child(even) {
+        background: var(--table-even-bg-color);
+      }
+
+      tr:nth-child(odd) {
+        background:  var(--table-odd-bg-color);
+      }
+    }
+  }
+
+  .export-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -1,0 +1,25 @@
+.tab-header {
+  display: flex;
+  margin-bottom: 24px;
+
+  .tab-description {
+    color: var(--cta-description);
+    font-family: Inter, fakt-web, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.01071em;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .tab-button-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,119 @@
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  white-space: nowrap;
+  &.align-right {
+    justify-content: flex-end;
+
+    .dropdown-inner {
+      right: 10px;
+    }
+  }
+
+  &.align-left {
+    justify-content: flex-start;
+
+    .dropdown-inner {
+      left: 00px;
+    }
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--dropdown-size);
+    height: var(--dropdown-size);
+    border-radius: 3px;
+    border: 1px solid #c9cace;
+    background-color: var(--layer-color);
+
+    &:hover {
+      background-color: var(--step0-btn-bg);
+      cursor: pointer;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .dropdown-inner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    box-sizing: border-box;
+    top: 40px;
+    width:fit-content;
+    height: auto;
+    padding: 8px 12px 8px 12px;
+    align-items: center;
+    background-color: var(--modal-bg-color);
+    border-radius: 5px;
+    border: 1px solid #e3e4e6;
+    box-shadow: 0px 33px 80px rgb(0 0 0 / 7%),
+      0px 13.7866px 33.4221px rgb(0 0 0 / 5%),
+      0px 7.37098px 17.869px rgb(0 0 0 / 4%),
+      0px 4.13211px 10.0172px rgb(0 0 0 / 4%),
+      0px 2.19453px 5.32008px rgb(0 0 0 / 3%),
+      0px 0.913195px 2.21381px rgb(0 0 0 / 2%);
+    color: var(--cta-description);
+    cursor: initial;
+    z-index: 9;
+
+    > div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 3px;
+      height: 21px;
+      font-size: 13px;
+      font-weight: 400;
+      margin: 4px 8px;
+
+      div {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      &.red {
+        color: #d03c38;
+
+        &:hover {
+          color: #aa2d31;
+          background-color: var(--user-hover-bg-color);
+        }
+      }
+
+      &.separator {
+        height: 1px !important;
+        border-bottom: 1px solid #e3e4e6;
+        margin-bottom: 4px;
+
+        &:hover {
+          background-color: var(--layer-color);
+        }
+      }
+
+      &:hover {
+        background-color: var(--user-hover-bg-color);
+        color: #1e212a;
+        cursor: pointer;
+      }
+
+      > div:first-child {
+        flex: 0 0 25px;
+
+        svg {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+  }
+}

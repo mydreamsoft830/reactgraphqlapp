@@ -1,0 +1,107 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+
+  .dashboard-content {
+    flex: 1 1;
+    padding-left: 15px;
+
+    .loading-small {
+      --loader-color: #ccc;
+    }
+
+    .lds-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .dashboard-content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      h1 {
+        min-width: 250px;
+        font-size: 25px;
+        margin: 5px 10px;
+      }
+
+      .time-select {
+        flex: 1;
+      }
+    }
+
+    .react-grid-layout {
+      position: relative;
+      transition: height 200ms ease;
+
+      .react-grid-item {
+        transition: all 200ms ease;
+        transition-property: left, top;
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border-radius: 3px;
+
+        &.cssTransforms {
+          transition-property: transform;
+        }
+
+        &.resizing {
+          z-index: 1;
+          will-change: width, height;
+        }
+
+        &.react-draggable-dragging {
+          transition: none;
+          z-index: 3;
+          will-change: transform;
+        }
+
+        &.react-grid-placeholder {
+          background: red;
+          opacity: 0.2;
+          transition-duration: 100ms;
+          z-index: 2;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+        }
+
+        &>.react-resizable-handle {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          bottom: 0;
+          right: 0;
+          cursor: se-resize;
+        }
+
+        &>.react-resizable-handle::after {
+          content: "";
+          position: absolute;
+          right: 3px;
+          bottom: 3px;
+          width: 5px;
+          height: 5px;
+          border-right: 2px solid rgba(0, 0, 0, 0.4);
+          border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+
+    .save-button {
+      text-align: right;
+      padding-bottom: 10px;
+    }
+  }
+}

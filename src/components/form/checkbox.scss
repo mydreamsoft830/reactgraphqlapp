@@ -1,0 +1,12 @@
+.checkbox {
+    .check_field {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+
+        label {
+            margin-bottom: 0;
+        }
+    }
+}

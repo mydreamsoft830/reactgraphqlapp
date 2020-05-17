@@ -1,0 +1,15 @@
+.confirmation-modal {
+  .confirmation-message {
+    font-weight: 300;
+    margin-bottom: 35px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .button {
+      margin: 5px;
+    }
+  }
+}

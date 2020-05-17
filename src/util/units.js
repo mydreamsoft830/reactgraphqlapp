@@ -1,0 +1,43 @@
+export const FieldUnitPrefixType = [
+
+  { value: 'NONE', label: 'None' },
+  { value: 'YOTTA', label: 'Yotta' },
+  { value: 'ZETTA', label: 'Zetta' },
+  { value: 'EXA', label: 'Exa' },
+  { value: 'PETA', label: 'Peta' },
+  { value: 'TERA', label: 'Tera' },
+  { value: 'GIGA', label: 'Giga' },
+  { value: 'MEGA', label: 'Mega' },
+  { value: 'KILO', label: 'Kilo' },
+  { value: 'HECTO', label: 'Hecto' },
+  { value: 'DECA', label: 'Deca' },
+  { value: 'DECI', label: 'Deci' },
+  { value: 'CENTI', label: 'Centi' },
+  { value: 'MILLI', label: 'Milli' },
+  { value: 'MICRO', label: 'Micro' },
+  { value: 'NANO', label: 'Nano' },
+  { value: 'PICO', label: 'Pico' },
+  { value: 'FEMTO', label: 'Femto' },
+  { value: 'ATTO', label: 'Atto' },
+  { value: 'ZEPTO', label: 'Zepto' },
+  { value: 'YOCTO', label: 'Yocto' },
+]
+
+export const FieldUnitType = [
+
+  { value: 'NONE', label: 'None' },
+  { value: 'YEAR', label: 'Year' },
+  { value: 'MONTH', label: 'Month' },
+  { value: 'DAY', label: 'Day' },
+  { value: 'HOUR', label: 'Hour' },
+  { value: 'MINUTE', label: 'Minute' },
+  { value: 'SECOND', label: 'Second' },
+  { value: 'METER', label: 'Meter' },
+  { value: 'GRAM', label: 'Gram' },
+  { value: 'AMPERE', label: 'Ampere' },
+  { value: 'KELVIN', label: 'Kelvin' },
+  { value: 'CELCIUS', label: 'Celcius' },
+  { value: 'MOLE', label: 'Mole' },
+  { value: 'CANDELA', label: 'Candela' },
+  { value: 'LITER', label: 'Liter' },
+]

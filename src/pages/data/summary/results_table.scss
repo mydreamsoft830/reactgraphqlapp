@@ -1,0 +1,32 @@
+.summary-results-table {
+  background-color: var(--text-field-bg-color);
+  max-height      : 150px;
+  // overflow        : auto;
+  white-space: nowrap;
+  table {
+    width          : 100%;
+    border-collapse: collapse;
+    border         : 1px solid #96D4D4;
+  }
+
+  th {
+    padding-left: 20px;
+    text-align  : left;
+  }
+
+  tr {
+    border-bottom: 1px solid #96D4D4;
+  }
+
+  td {
+    padding-left: 20px;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  .algin-left {
+    text-align: left;
+  }
+}

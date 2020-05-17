@@ -1,0 +1,17 @@
+.widget {
+  .widget-content-body {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    .last-value {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+
+      span {
+        padding: 0 !important;
+      }
+    }
+  }
+}

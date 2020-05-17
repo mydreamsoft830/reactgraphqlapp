@@ -1,0 +1,24 @@
+.details-frame {
+  padding: 32px;
+  border-radius: 6px;
+  border: 1px solid #e3e4e6;
+  display: grid;
+  gap: 50px 50px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+    span:nth-child(1) {
+      font-weight: 400;
+      color: var(--cta-description);
+      margin-bottom: 5px;
+    }
+
+    span:nth-child(1) {
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.activity {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .activity-action {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-top: 0;
+      font-size: 14px;
+    }
+
+    .form .text-field,
+    .form .text-area {
+      margin-bottom: 8px;
+    }
+  }
+
+  .subscribed-topics {
+    margin-top: 32px;
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+
+    .col-header {
+      height: 30px !important;
+      border-bottom: 3px solid var(--separator-color);
+      font-weight: 500;
+    }
+
+    .topic-select {
+      flex: 0 0 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      > div:not(.col-header) {
+        box-sizing: border-box;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px;
+        border-radius: 4px;
+        margin-top: 5px;
+
+        .close-icon {
+          border-radius: 25px;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: background-color linear 200ms;
+
+          &:hover {
+            background-color: rgb(214, 214, 214);
+          }
+        }
+
+        > div:first-child {
+          display: inline-flex;
+          flex-direction: column;
+
+          > span:first-child {
+            font-size: 10px;
+            font-weight: 500;
+          }
+
+          > span:nth-child(2) {
+            padding: 3px 0;
+          }
+        }
+
+        &.selected {
+          box-shadow: inset 0px 0px 0px 1px var(--menu-hover);
+          border-color: var(--menu-hover);
+          border-width: 2px !important;
+        }
+
+        &:hover:not(.selected) {
+          border: 1px solid #c9cace;
+          padding: 5px !important;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .messages {
+      flex: 1 1;
+      max-height: 100%;
+      overflow-y: auto;
+
+      > div:not(.col-header) {
+        flex: 1 1;
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+        border-radius: 5px;
+        margin: 5px;
+        border: 1px solid #c9cace;
+
+        .message-time {
+          position: absolute;
+          top: 3px;
+          right: 3px;
+          font-size: 13px;
+        }
+
+        > div {
+          display: inline-flex;
+          flex-direction: column;
+          width: 100%;
+          margin-bottom: 8px;
+
+          > span:first-child {
+            font-size: 10px;
+            font-weight: 500;
+          }
+
+          > span:nth-child(2) {
+            padding: 3px 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--header-dropdown-last-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--top-bar-bg-color);
+}
+

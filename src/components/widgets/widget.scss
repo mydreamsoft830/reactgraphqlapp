@@ -1,0 +1,38 @@
+.widget {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    .widget-header {
+        display: flex;
+        height: 32px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 3px;
+        border-bottom: 1px solid rgb(230, 227, 227);
+
+        .title {
+            margin: 0;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 16px;
+        }
+
+        .dropdown {
+            .icon {
+                border: none;
+
+                &:hover {
+                    background-color: #FFF;
+                }
+            }
+        }
+    }
+
+    .widget-content-body {
+        display: block;
+        height: calc(100% - 44px);
+        padding: 3px 6px;
+    }
+}

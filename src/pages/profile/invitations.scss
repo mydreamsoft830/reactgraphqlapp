@@ -1,0 +1,24 @@
+.invite-action-buttons {
+  display: inline-flex;
+  flex-direction: row;
+
+  > * {
+    margin: 5px;
+  }
+}
+
+.invite-project-column {
+  div {
+    display: flex;
+    flex-direction: column;
+
+    span:first-child {
+      font-weight: 500;
+    }
+
+    span:last-child {
+      font-size: 12px;
+      color: #8c8c8c;
+    }
+  }
+}

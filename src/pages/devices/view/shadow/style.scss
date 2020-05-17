@@ -1,0 +1,65 @@
+.device-shadows {
+  display              : grid;
+  grid-template-columns: 200px min-content 1fr;
+  gap                  : 1rem;
+
+  &>ul {
+    list-style: none;
+    display   : grid;
+    gap       : 2px;
+    height    : fit-content;
+    margin    : 0;
+    padding   : 0;
+
+    &>li {
+      padding      : 4px 16px;
+      cursor       : pointer;
+      border       : 1px solid transparent;
+      border-radius: 0.5rem;
+      height       : fit-content;
+
+      &.active {
+        background-color: var(--li-active-hover-bg-color);
+        border-color    : var(--separator-color);
+      }
+
+      &>.shadow-text {}
+
+      &>.shadow-bottom-id {
+        font-size  : 0.6rem;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &>.horizontal {
+    width           : 1px;
+    background-color: var(--separator-color);
+  }
+}
+
+.edit-content-main {
+  &>.action {
+    display        : grid;
+    gap            : 5px;
+    grid-auto-flow : column;
+    justify-items  : right;
+    justify-content: right;
+
+    &>.remove-btn {
+      display      : grid;
+      justify-items: center;
+      align-items  : center;
+      margin-top   : 24px;
+      .button{
+        height:20px;
+      }
+    }
+  }
+
+  .invalid-json-border {
+    .w-tc-editor {
+      border: 1px solid red;
+    }
+  }
+}

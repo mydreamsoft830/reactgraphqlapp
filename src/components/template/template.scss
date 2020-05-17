@@ -1,0 +1,9 @@
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+  overflow: none;
+  background-color: var(--layer-color);
+  color: var( --font-color );
+}

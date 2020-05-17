@@ -1,0 +1,143 @@
+.form {
+  width: 100%;
+  height: auto;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .code-area {
+    display: flex;
+    flex-direction: column;
+    .w-tc-editor {
+      background-color: var(--text-field-bg-color);
+      color           : var(--font-color);
+    }
+    margin-bottom: 16px;
+    [data-color-mode*="dark"] body {
+      --color-canvas-subtle: #161b22;
+    }
+  }
+
+  .text-field,
+  .file-field,
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    &.disabled {
+      input {
+        color           : var(--font-color);
+        background-color: var(--text-field-bg-color);
+      }
+
+      > div {
+        background-color: var(--text-field-bg-color);
+      }
+    }
+
+    >div {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #b5b7bd;
+      padding: 8px 16px;
+      box-sizing: border-box;
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea,
+    select {
+      border: 0;
+      outline: 0;
+      width: 100%;
+      box-sizing: border-box;
+      color: var(--font-color);
+      background-color: var(--text-field-bg-color);
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    &.error {
+      label {
+        color: #d03c38;
+      }
+
+      div {
+        border: 1px solid #d03c38;
+      }
+    }
+
+    .validation-errors {
+      display: inline-block;
+      font-size: 12px;
+      color: #d03c38;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      display: inline-block;
+      font-size: 12px;
+    }
+
+    &.required label:after {
+      content: '*';
+      color: #d03c38;
+      padding: 0 3px;
+    }
+  }
+
+  .radio {
+    >div {
+      display: inline-flex;
+      flex-direction: row;
+
+      >span {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 36px;
+
+        input {
+          margin: 0;
+        }
+
+        label {
+          margin: 0 0 0 4px;
+        }
+      }
+    }
+  }
+
+  .form-submit-button {
+    color: #fff;
+    background-color: #635dff;
+    min-width: 64px;
+    padding: 0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 200ms linear;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    margin-top: 24px;
+
+    &:hover {
+      background-color: #564ed1;
+      cursor: pointer;
+    }
+
+    &.loading {
+      background-color: #c2bfbf !important;
+    }
+  }
+}

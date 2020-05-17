@@ -1,0 +1,87 @@
+.style-light {
+  ///color
+  --top-bar-text-color          : #d5dbdb;
+  --header-docs-link-color      : #c9cace;
+  --white-color                 : #ffffff;
+  --black-color                 : #000;
+  --font-color                  : #1e212a;
+  --header-dropdown-item-color  : #232325;
+  --header-dropdown-last-color  : #8c8c8c;
+  --cta-description             : #65676e;
+  ///background color
+  --layer-color                 : #fff;
+  --top-bar-bg-color            : #1e2b3c;
+  --separator-color             : #CCC;
+  --notification-bg-color       : #e23434;
+  --user-hover-bg-color         : #f5f5f5;
+  --header-hover-bg-color       : #213f69;
+  --li-active-hover-bg-color    : #E8E8FF;
+  --menu-hover                  : #635dff;
+  --text-field-bg-color         : #ffffff;
+  --card-header-bg-color        : antiquewhite;
+  --select-bg-color             : white;
+  --step0-btn-bg                : #eeeef0;
+  --back-btn-bg                 : #1e212a;
+  --modal-bg-color              : #ffffff;
+  --dropdown-menu-bg-color      : #fff;
+  --text-sub-header-bg-color    : #eff0f2;
+  --project-dropdown-bg-color   : #fff;
+  --project-list-select-bg-color: #e3e4e6;
+  --advance-option-bg-color     : #f7f7f7;
+  --select-control-bg-color     : #ffffff;
+  --select-menu-bg-color        : #ffffff;
+  --select-option-bg-color      : #ffffff;
+  --action-btn-bg-color         : #222224;
+  --table-even-bg-color         : #f1f1fd;
+  --table-odd-bg-color          : #fff;
+  --agr-bg-blue                 : blue;
+  ///border color
+  --header-border-color      : #6867675d;
+  --notification-border-color: #750000;
+  --border                   : #e3e4e6;
+
+
+}
+
+.style-dark {
+  ///color
+  --top-bar-text-color          : #d5dbdb;
+  --header-docs-link-color      : #c9cace;
+  --white-color                 : #ffffff;
+  --black-color                 : #000;
+  --font-color                  : #fff;
+  --header-dropdown-item-color  : #232325;
+  --header-dropdown-last-color  : #8c8c8c;
+  --cta-description             : #B2B3BD;
+  ///background color
+  --layer-color                 : #242731;
+  --top-bar-bg-color            : #1e2b3c;
+  --separator-color             : #E4E4E4;
+  --notification-bg-color       : #e23434;
+  --user-hover-bg-color         : #2e3b3c;
+  --header-hover-bg-color       : #213f69;
+  --li-active-hover-bg-color    : #1e212a;
+  --menu-hover                  : #e0eafd;
+  --text-field-bg-color         : #1e212a;
+  --card-header-bg-color        : rgba(228, 228, 228, 0.04);
+  --select-bg-color             : rgba(228, 228, 228, 0.04);
+  --step0-btn-bg                : #242731;
+  --back-btn-bg                 : #1e212a;
+  --modal-bg-color              : #1e2b3c;
+  --dropdown-menu-bg-color      : #1e2b3c;
+  --text-sub-header-bg-color    : #1e212a;
+  --project-dropdown-bg-color   : #1e2b3c;
+  --project-list-select-bg-color: #1e212a;
+  --advance-option-bg-color     : #1e212a;
+  --select-control-bg-color     : #1e2b3c;
+  --select-menu-bg-color        : #1e2b3c;
+  --select-option-bg-color      : #1e2b3c;
+  --action-btn-bg-color         : #aaaaaa;
+  --table-even-bg-color         : #1e212a;
+  --table-odd-bg-color          : #1e2b3c;
+  --agr-bg-blue                 : blue;
+  ///border color
+  --header-border-color         : #6867675d;
+  --notification-border-color   : #750000;
+  --border                      : #e3e4e6;
+}

@@ -1,0 +1,14 @@
+.content {
+  box-sizing: border-box;
+  padding: 40px 24px 50px;
+  max-width: 1048px;
+  width: 100%;
+  margin: 0px auto;
+
+  &.fullWidth {
+    max-width: calc(100% - 265px) !important;
+    @media only screen and (max-width: 1200px) {
+      max-width: calc(100%) !important;
+    }
+  }
+}

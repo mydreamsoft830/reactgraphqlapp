@@ -1,0 +1,130 @@
+.device-discovery {
+  > span {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 5px;
+  }
+
+  .found-devices {
+    border: 1px solid #e3e4e6;
+    padding: 40px;
+    height: 200px;
+    border-radius: 6px;
+  }
+}
+
+.add-legacy-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  margin: 10px 0;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background-color: var(--step0-btn-bg);
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+
+    .next-icon {
+      transform: translateX(0%);
+    }
+  }
+
+  span:first-child {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  span:nth-child(2) {
+    color: #5656e7;
+  }
+
+  .next-icon {
+    transition: transform 200ms ease-in-out;
+    transform: translateX(100%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 15px;
+  }
+}
+
+.success-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #39bb70;
+  border-radius: 10px 10px 0 0;
+  height: 130px;
+  flex-direction: column;
+  color: #fff;
+  z-index: 99;
+
+  svg {
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+    font-size: 30px;
+
+    svg {
+      padding-right: 10px;
+    }
+  }
+}
+
+.success-lower {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px;
+  height: 290px;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.success-footer {
+  flex: 1 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+
+  .button-footer {
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    > * {
+      margin-right: 10px;
+    }
+  }
+}
+
+.add-device-container {
+  padding: 16px 32px;
+}
